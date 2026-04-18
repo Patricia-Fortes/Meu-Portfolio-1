@@ -117,3 +117,30 @@ footer {
     width: 90%;
   }
 }
+.sobre-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #38bdf8;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+  transition: transform 0.3s;
+}
+
+.foto-perfil:hover {
+  transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
