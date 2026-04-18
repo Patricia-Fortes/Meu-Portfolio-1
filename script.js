@@ -1,19 +1,19 @@
 const projetos = [
   {
     nome: "Portfólio Pessoal",
-    descricao: "Site responsivo desenvolvido com HTML, CSS e JavaScript.",
+    descricao: "Site moderno e responsivo.",
     link: "#"
   },
   {
-    nome: "Projeto JavaScript",
-    descricao: "Aplicação com manipulação do DOM.",
+    nome: "App JavaScript",
+    descricao: "Projeto com manipulação do DOM.",
     link: "#"
   }
 ];
 
 const container = document.getElementById("lista-projetos");
 
-projetos.forEach(proj => {
+projetos.forEach((proj, index) => {
   const div = document.createElement("div");
   div.classList.add("projeto");
 
@@ -24,4 +24,9 @@ projetos.forEach(proj => {
   `;
 
   container.appendChild(div);
+
+  // animação com delay
+  setTimeout(() => {
+    div.classList.add("show");
+  }, 200 * index);
 });
