@@ -1,12 +1,12 @@
 const projetos = [
   {
-    nome: "Projeto 1",
-    descricao: "Um site simples feito com HTML e CSS.",
+    nome: "Portfólio Pessoal",
+    descricao: "Site responsivo desenvolvido com HTML, CSS e JavaScript.",
     link: "#"
   },
   {
-    nome: "Projeto 2",
-    descricao: "Aplicação com JavaScript básico.",
+    nome: "Projeto JavaScript",
+    descricao: "Aplicação com manipulação do DOM.",
     link: "#"
   }
 ];
