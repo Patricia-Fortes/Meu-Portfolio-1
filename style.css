@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background: #333;
+  background: #222;
   color: white;
   padding: 15px;
   display: flex;
@@ -28,8 +28,8 @@ section {
 
 #lista-projetos {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .projeto {
@@ -40,13 +40,13 @@ section {
 }
 
 footer {
-  background: #333;
+  background: #222;
   color: white;
   text-align: center;
   padding: 10px;
 }
 
-/* Responsividade */
+/* Responsividade (mobile) */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -56,5 +56,9 @@ footer {
   #lista-projetos {
     flex-direction: column;
     align-items: center;
+  }
+
+  .projeto {
+    width: 90%;
   }
 }
